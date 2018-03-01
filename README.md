@@ -2,9 +2,9 @@
 
 Branch|[Travis CI](https://travis-ci.org)|[Codecov](https://www.codecov.io)
 ---|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/correct_cpp_euler_2.svg?branch=master)](https://travis-ci.org/richelbilderbeek/correct_cpp_euler_2)|[![codecov.io](https://codecov.io/github/richelbilderbeek/correct_cpp_euler_2/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/correct_cpp_euler_2/branch/master)
+master|[![Build Status](https://travis-ci.org/CarmenIJsebaart/correct_cpp_euler_2.svg?branch=master)](https://travis-ci.org/CarmenIJsebaart/correct_cpp_euler_2)|[![codecov.io](https://codecov.io/github/CarmenIJsebaart/correct_cpp_euler_2/coverage.svg?branch=master)](https://codecov.io/github/CarmenIJsebaart/correct_cpp_euler_2/branch/master)
 
-[Correct C++](https://github.com/richelbilderbeek/correct_cpp) chapter 'euler_2'.
+[Correct C++](https://github.com/CarmenIJsebaart/correct_cpp) chapter 'euler_2'.
 
 ## Goal
 
@@ -13,9 +13,9 @@ master|[![Build Status](https://travis-ci.org/richelbilderbeek/correct_cpp_euler
 
 ## Prerequisites
 
- * Understand [how this course works](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/how_this_course_works.md)
- * Have some experience [how to lower cyclomatic complexity](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/lower_cyclomatic_complexity.md)
- * Have some experience [how to get 100 percent code coverage](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/get_100_percent_code_coverage.md)
+ * Understand [how this course works](https://github.com/CarmenIJsebaart/correct_cpp/blob/master/doc/how_this_course_works.md)
+ * Have some experience [how to lower cyclomatic complexity](https://github.com/CarmenIJsebaart/correct_cpp/blob/master/doc/lower_cyclomatic_complexity.md)
+ * Have some experience [how to get 100 percent code coverage](https://github.com/CarmenIJsebaart/correct_cpp/blob/master/doc/get_100_percent_code_coverage.md)
 
 ## Exercise
 
