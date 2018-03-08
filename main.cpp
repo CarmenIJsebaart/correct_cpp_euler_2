@@ -45,7 +45,7 @@ int main()
   for(int counter = 0; counter < static_cast<int>(numbers.size()); ++counter)
   {
     int current_number = numbers.at(counter);
-    if(current_number % 2 == 0)
+    if(is_even(current_number))
     {
       even_numbers.push_back(current_number);
     }
