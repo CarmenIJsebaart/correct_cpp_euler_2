@@ -1,4 +1,8 @@
+#include <algorithm>
 #include <iostream>
+#include <numeric>
+#include <regex>
+#include <vector>
 
 /// Show the answer to Project Euler, problem 2 (https://projecteuler.net/problem=1):
 ///
@@ -11,7 +15,43 @@
 /// By considering the terms in the Fibonacci sequence 
 /// whose values do not exceed four million, 
 /// find the sum of the even-valued terms.
+
+///Checks if a number is even
+bool is_even(const std::string& str)
+{
+  return std::regex_match(str,
+    std::regex("-?[[:digit:]]+(2|4|6|8|0)"));
+}
+
+///Main function of the euler 2 program
 int main() 
 {
-  std::cout << "123456\n";
+  std::vector<int> numbers{1, 2};
+  int number = 4000000;
+  for(int counter = 0; counter < number; ++counter)
+  {
+    int vector_size = numbers.size();
+    int last_number = numbers[vector_size - 1];
+    if(last_number < 4000000)
+    {
+      int before_last_number = numbers[vector_size - 2];
+      int next_number = last_number + before_last_number;
+      numbers.push_back(next_number);
+    }
+  }
+  numbers.pop_back();
+
+  std::vector<int> even_numbers;
+  for(int counter = 0; counter < static_cast<int>(numbers.size()); ++counter)
+  {
+    int current_number = numbers.at(counter);
+    if(current_number % 2 == 0)
+    {
+      even_numbers.push_back(current_number);
+    }
+  }
+
+  int sum = std::accumulate(even_numbers.begin(), even_numbers.end(), 0);
+  std::cout << sum << "\n";
 }
+
