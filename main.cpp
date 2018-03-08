@@ -16,12 +16,6 @@
 /// whose values do not exceed four million, 
 /// find the sum of the even-valued terms.
 
-///Checks if a number is even
-bool is_even(const std::string& str)
-{
-  return std::regex_match(str,
-    std::regex("-?[[:digit:]]+(2|4|6|8|0)"));
-}
 
 ///Main function of the euler 2 program
 int main() 
@@ -45,7 +39,7 @@ int main()
   for(int counter = 0; counter < static_cast<int>(numbers.size()); ++counter)
   {
     int current_number = numbers.at(counter);
-    if(is_even(current_number))
+    if(current_number % 2 == 0)
     {
       even_numbers.push_back(current_number);
     }
